@@ -1,2 +1,2 @@
 # academic-works
-Repositorio de Trabalhos Academicos
+Repositório de trabalhos acadêmicos
