@@ -89,10 +89,9 @@ Escolha a opção desejada:
                     cont_indice =  len(contador) -1
                     cont_f = contador[cont_indice]
 
-                    # Cria novo codigo       
+                    # Cria novo codigo (Gerador de Codigo)
                     cont = cont_f + 1 
                     contador.append(cont)
-                        
                     principal.cadastrarPeca(cont)
             
 
