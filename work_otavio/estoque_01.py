@@ -117,16 +117,16 @@ Escolha a opção desejada:
 
     def cadastrarPeca(cont):
 
-        print(f"Código da Peça: {cont:03d}")
+                print(f"Código da Peça: {cont:03d}")
         
-        nome = str(input("Por Favor entre com o NOME da peça:"))
-        fabricante = str(input("Por Favor entre com o FABRICANTE da peça:"))
-        valor = int(input("Por Favor entre com o VALOR(R$) da peça:"))
+                nome = str(input("Por Favor entre com o NOME da peça:"))
+                fabricante = str(input("Por Favor entre com o FABRICANTE da peça:"))
+                valor = int(input("Por Favor entre com o VALOR(R$) da peça:"))
         
-        # Cadastro de codigo da peca, fabricante e valor
-        cadastro_codigo[nome] = cont
-        cadastro_nome_fab_peca[nome] = fabricante 
-        cadastro_valor[nome] = valor
+                # Cadastro de codigo da peca, fabricante e valor
+                cadastro_codigo[nome] = cont
+                cadastro_nome_fab_peca[nome] = fabricante 
+                cadastro_valor[nome] = valor
         
 
     def consultarPeca():
