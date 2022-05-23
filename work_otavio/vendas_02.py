@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # coding=UTF-8
 # Author: Tiago Eduardo Zacarias
-# Version: 1.0
 # Date: 21-05-2022
 # License: GPLv3
 
