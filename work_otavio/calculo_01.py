@@ -20,15 +20,12 @@ vlf_comp_valores_rota = []
 
 # Functions
 
-
 def id_pessoal():
 
     print(f"Bem Vindo a Companhia de Logistica Otavio Augusto")
 
-# Funções
-
-
-class principal:
+# Classes
+class Principal:
 
     # Função Dimensão do Objeto.
     def dimensoesObjeto():
@@ -51,13 +48,13 @@ class principal:
 
                     vli_valores_dimensao.append(val_alt)
 
-                    principal.d1()
+                    Principal.d1()
 
             except(UnboundLocalError, ValueError):
 
                 print("Você digitou alguma dimensão com valor não numerico")
 
-                principal.dimensoesObjeto()
+                Principal.dimensoesObjeto()
 
     def d1():
 
@@ -76,13 +73,13 @@ class principal:
 
                     vli_valores_dimensao.append(val_com)
 
-                    principal.d2()
+                    Principal.d2()
 
             except(UnboundLocalError, ValueError):
 
                 print("Você digitou alguma dimensão com valor não numerico")
 
-                principal.d1()
+                Principal.d1()
 
     def d2():
 
@@ -105,7 +102,7 @@ class principal:
 
                 print("Você digitou alguma dimensão com valor não numerico")
 
-                principal.d2()
+                Principal.d2()
 
             try:
                 # Calculo da dimensão (em cm3)
@@ -141,7 +138,7 @@ class principal:
                     vli_valores_dimensao.clear()
                     vlf_valores_dimensao.clear()
 
-                    principal.dimensoesObjeto()
+                    Principal.dimensoesObjeto()
 
                 print("O volume do objeto é (em cm3): %.1f" %
                       (vlf_valores_dimensao[0]))
@@ -150,7 +147,7 @@ class principal:
 
                 print("Você digitou alguma dimensão com valor não numerico")
 
-            principal.pesoObjeto()
+            Principal.pesoObjeto()
 
     # Função Peso
 
@@ -171,7 +168,7 @@ class principal:
                     vlf_valores_peso.clear()
                     vlf_valores_peso.clear()
 
-                    principal.pesoObjeto()
+                    Principal.pesoObjeto()
 
                 else:
 
@@ -204,9 +201,9 @@ class principal:
             except(UnboundLocalError, ValueError):
 
                 print("Você digitou peso com valor não numerico")
-                principal.pesoObjeto()
+                Principal.pesoObjeto()
 
-            principal.rotaObjeto()
+            Principal.rotaObjeto()
 
     # Função Rota objeto
 
@@ -216,16 +213,15 @@ class principal:
 
             try:
 
-                print("""
-Selecione a rota:
-
-BR - De Brasília para Rio de Janeiro
-BS - De Brasília para São Paulo
-RB - De Rio de Janeiro para Brasília
-RS - De Rio de Janeiro para São Paulo
-SR - De São Paulo para Rio de Janeiro
-SB - De São Paulo para Brasília       
-                        """)
+                
+                print("Selecione a rota:")
+                print("BR - De Brasília para Rio de Janeiro")
+                print("BS - De Brasília para São Paulo")
+                print("RB - De Rio de Janeiro para Brasília")
+                print("RS - De Rio de Janeiro para São Paulo")
+                print("SR - De São Paulo para Rio de Janeiro")
+                print("SB - De São Paulo para Brasília")       
+                        
 
                 rota = str(input("Digite a rota do Objeto:"))
 
@@ -234,7 +230,7 @@ SB - De São Paulo para Brasília
                     print(
                         """Você digitou uma rota que não existe\nPor Favor entre com a rota desejada novamente\n""")
 
-                    principal.rotaObjeto()
+                    Principal.rotaObjeto()
 
                 elif rota == "br":
 
@@ -291,4 +287,4 @@ SB - De São Paulo para Brasília
 
 
 id_pessoal()
-principal.dimensoesObjeto()
+Principal.dimensoesObjeto()
